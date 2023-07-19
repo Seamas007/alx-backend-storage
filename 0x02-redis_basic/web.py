@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
+
 import requests
 import redis
 import time
+from functools import wraps
+from typing import Callable
+
 
 def get_page(url: str) -> str:
     cache = redis.Redis()

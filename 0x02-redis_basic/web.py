@@ -11,6 +11,7 @@ redis_store = redis.Redis()
 '''The module-level Redis instance.
 '''
 
+
 def data_cacher(method: Callable) -> Callable:
     '''Caches the output of fetched data.
     '''
